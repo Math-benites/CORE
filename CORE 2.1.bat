@@ -183,7 +183,7 @@ REM Superfetch (SysMain)
 		call :c 07 "Tipo de inicializacao:"
 		call :c 0a "%SEARCH1%" /n
 		)
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		call :c 07 "[Bits]              " 
 		for /f "tokens=2 delims==" %%f in ('wmic SERVICE BITS get state /VALUE ^| find "="') do set "SEARCH=%%f" (
 		call :c 07 "Status Service:"
@@ -211,7 +211,7 @@ GOTO MENU
 		systemreset
 GOTO MENU
 :FIRM
-		call :c 0e "downloading Firmware Hibernaçao"
+		call :c 0e "downloading Firmware HibernaÃ§ao"
         call :c 07 "[1,0 MB]" /n       
 		powercfg -x -disk-timeout-ac 0
 		powercfg -x -disk-timeout-dc 0
@@ -273,7 +273,7 @@ REM Telemetria de Usuario Conectado (DiagTrack)
         call :c 0a "[Desativado Telemetria]" /n 
 		ECHO DESABILITADO Experiencias e Telemetria de Usuario Conectado >> %USERPROFILE%\Desktop\RELATORIO.txt
 		timeout /t 1 /nobreak > nul
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		sc config BITS start= disabled 
 		sc failureflag BITS flag=0 
 		sc failure BITS  reset= 3 actions= /0 
@@ -332,7 +332,7 @@ GOTO CORE
 		cls
 		echo Otimizando nucleos apartir bcdedit...
 		timeout /t 1 /nobreak > nul
-		call :c 0a " [Processamento Otimizado Na inicializaçao para %CPU% Nucleos] " /n 
+		call :c 0a " [Processamento Otimizado Na inicializaÃ§ao para %CPU% Nucleos] " /n 
 		)
 		timeout /t 3 /nobreak > nul
 GOTO CACHE
@@ -413,7 +413,7 @@ REM Superfetch (SysMain)
 		call :c 07 "Tipo de inicializacao:"
 		call :c 0a "%SEARCH1%" /n
 		)
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		call :c 07 "[Bits]              " 
 		for /f "tokens=2 delims==" %%f in ('wmic SERVICE BITS get state /VALUE ^| find "="') do set "SEARCH=%%f" (
 		call :c 07 "Status Service:"
@@ -660,7 +660,7 @@ REM Superfetch (SysMain)
 		call :c 07 "Tipo de inicializacao:"
 		call :c 0a "%SEARCH1%" /n
 		)
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		call :c 07 "[Bits]              " 
 		for /f "tokens=2 delims==" %%f in ('wmic SERVICE BITS get state /VALUE ^| find "="') do set "SEARCH=%%f" (
 		call :c 07 "Status Service:"
@@ -688,7 +688,7 @@ GOTO MENU
 		systemreset
 GOTO MENU
 :FIRM
-		call :c 0e "downloading Firmware Hibernaçao"
+		call :c 0e "downloading Firmware HibernaÃ§ao"
         call :c 07 "[1,0 MB]" /n       
 		powercfg -x -disk-timeout-ac 0
 		powercfg -x -disk-timeout-dc 0
@@ -750,7 +750,7 @@ REM Telemetria de Usuario Conectado (DiagTrack)
         call :c 0a "[Desativado Telemetria]" /n 
 		ECHO DESABILITADO Experiencias e Telemetria de Usuario Conectado >> %USERPROFILE%\Desktop\RELATORIO.txt
 		timeout /t 1 /nobreak > nul
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		sc config BITS start= disabled 
 		sc failureflag BITS flag=0 
 		sc failure BITS  reset= 3 actions= /0 
@@ -809,7 +809,7 @@ GOTO CORE
 		cls
 		echo Otimizando nucleos apartir bcdedit...
 		timeout /t 1 /nobreak > nul
-		call :c 0a " [Processamento Otimizado Na inicializaçao para %CPU% Nucleos] " /n 
+		call :c 0a " [Processamento Otimizado Na inicializaÃ§ao para %CPU% Nucleos] " /n 
 		)
 		timeout /t 3 /nobreak > nul
 GOTO CACHE
@@ -890,7 +890,7 @@ REM Superfetch (SysMain)
 		call :c 07 "Tipo de inicializacao:"
 		call :c 0a "%SEARCH1%" /n
 		)
-REM Serviço transferencia inteligente de tela de fundo (BITS)
+REM ServiÃ§o transferencia inteligente de tela de fundo (BITS)
 		call :c 07 "[Bits]              " 
 		for /f "tokens=2 delims==" %%f in ('wmic SERVICE BITS get state /VALUE ^| find "="') do set "SEARCH=%%f" (
 		call :c 07 "Status Service:"
